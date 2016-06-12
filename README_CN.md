@@ -1,7 +1,7 @@
 # X54Tool
 
 ####说明
- 这是一个很小巧的功能类库，为oc开发人员提供了一些非常便捷的功能;   
+ 这是我写的一个很小巧的功能类库，为oc开发人员提供了一些非常便捷的功能;   
  [click here to nevigate english version](https://github.com/xu54/X54Tool/blob/master/README.md)
  
 ===
@@ -46,12 +46,14 @@
    myView.width=1000;
 ```   
   避免了对frame操作的种种不便。
-  同时所有UIViewController对象也提供了便捷弹出警告框或选项框的方法，里面还有一句话调出选相机或相簿的对话框，具体可看X54UITool.h的头文件:   
+  同时所有UIViewController对象也提供了便捷弹出警告框或选项框的方法，里面还有一句话调出选相机或相簿的对话框，具体可看X54UITool.h的头文件，可以通过X54Tool设置弹出框的字体颜色和大小:   
 ```objective-c
    [vc showActionSheetWithTitle:nil buttonTitles:@[@"btn1",@"btn2",@"btn3" buttonHandler:^(NSInteger btnIndex,NSString* btnTitle))
    {
     
    }];
 ``` 
+
+
 
 
