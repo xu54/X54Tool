@@ -14,7 +14,8 @@
           obj.$x(100).$y(200).$width(300).$height(400)<br>
       this means set obj x=100, y=200, width=300, height=400<br>
       It's cool ha?now you can add this style to your own class with the following steps:<br>
-        1)add micro in your interface :<br>  
+        1)add micro in your interface :    
+
 ```objective-c    
          @interface YourClass :NSObject  
          _chain_set_decl(UIView, float, x ) //this add a property named $x in YourClass  
@@ -23,6 +24,7 @@
 ```  
 
          2)add micro in your implementation :   
+         
 ```objective-c    
          @implementation YourClass :NSObject  
          _chain_set_impl(UIView, float, x, self.x ) //means when use yourObj.$x(100),set 100 to self.x
