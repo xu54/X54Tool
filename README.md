@@ -1,8 +1,9 @@
 # X54Tool
 
 ####Description
- This is a very convenient toolset for every oc developer.It's small but very powerful;
- [中文使用说明链接](http://)
+ This is a very convenient toolset for every oc developer.It's small but very powerful;   
+ [点击进入中文使用说明](https://github.com/xu54/X54Tool/blob/master/README_CN.md)
+ 
 ===
 
 ####Usage
