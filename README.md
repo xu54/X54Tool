@@ -21,7 +21,8 @@
          _chain_set_decl(UIView, float, y ) //this add a property named $y in YourClass
          @end  
 ```  
-        2)add micro in your implementation :<br>  
+
+         2)add micro in your implementation :   
 ```objective-c    
          @implementation YourClass :NSObject  
          _chain_set_impl(UIView, float, x, self.x ) //means when use yourObj.$x(100),set 100 to self.x
