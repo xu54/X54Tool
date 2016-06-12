@@ -2,7 +2,7 @@
 
 ####Description
  This is a very convenient toolset for every oc developer.It's small but very powerful;
- 
+ [中文使用说明链接](http://)
 ===
 
 ####Usage
