@@ -15,8 +15,8 @@
       this means set obj x=100, y=200, width=300, height=400<br>
       It's cool ha?now you can add this style to your own class with the following steps:<br>
         1)add micro in your interface ,for example:<br>
- ```objective-c   
+ ```objective-c    
          @interface YourClass :NSObject
          _chain_set_decl(UIView, float, x )
          @end
-         ```
+```
