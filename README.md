@@ -18,7 +18,7 @@
 
 ```objective-c    
 @interface YourClass :NSObject  
-_chain_set_decl(UIView, float, x ) //this add a property named $x in YourClass
+_chain_set_decl(UIView, float, x ) //this add a property named $x in YourClass   
 _chain_set_decl(UIView, float, y ) //this add a property named $y in YourClass
 @end
 ```
