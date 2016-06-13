@@ -19,8 +19,8 @@
 
 ```objective-c    
   @interface YourClass :NSObject  
-  _chain_set_decl(UIView, float, x ); //为你的类添加了一个属性$x, x的名称自己定义  
-  _chain_set_decl(UIView, float, y ); //为你的类添加了一个属性$y,(注意，用的时候需要在y前加$符号
+  _chain_set_decl(YourClass, float, x ); //为你的类添加了一个属性$x, x的名称自己定义  
+  _chain_set_decl(YourClass, float, y ); //为你的类添加了一个属性$y,(注意，用的时候需要在y前加$符号
   @end
 ```   
 
@@ -28,11 +28,11 @@
   
 ```objective-c
   @implementation YourClass :NSObject
-  _chain_set_impl(UIView, float, x, self.x ); //意味着当调用yourObj.$x(100)时候，把 100 赋值给 self.x
+  _chain_set_impl(YourClass, float, x, self.x ); //意味着当调用yourObj.$x(100)时候，把 100 赋值给 self.x
   //如果你不是简简单单把值付给self.x，你希望自己做更多的逻辑，可以使用下面的两句宏，然后在中间加自己代码
-  _chain_set_impl_begin(UIView, float, y ) 
+  _chain_set_impl_begin(YourClass, float, y ) 
    _y = _chain_set_param; // _chain_set_param 是用户传进来的值，yourObj.$y(200), _chain_set_param就是200
-  _chain_set_impl_end(UIView, float, y )
+  _chain_set_impl_end(YourClass, float, y )
   @end
 ```
   通过简单的两句话, YourClass 这个类就可以这样使用了: `yourObj.$x(100).$y(200)`   
